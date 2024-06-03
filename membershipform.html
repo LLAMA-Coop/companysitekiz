@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="games.css">
+
+    <meta name="description"
+        content="Join LLAMA Coop and become part of a community that empowers members through shared resources and collective efforts. Sign up today to make a difference!">
+    <meta name="keywords"
+        content="cooperative, community, membership, shared resources, collective efforts, join cooperative, empower community">
+    <meta name="author" content="LLAMA LLC">
+
+    <meta property="og:title" content="Join Us - Learning, Langugae And Multicultural Advancement">
+    <meta property="og:description"
+        content="Become a part of our cooperative and join a community that values shared resources and collective efforts. Sign up today and make an impact!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://llama.coop">
+    <meta property="og:image" content="/images/llama1.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Join Us - Learning, Langugae And Multicultural Advancement">
+    <meta name="twitter:description"
+        content="Become a part of our cooperative and join a community that values shared resources and collective efforts. Sign up today and make an impact!">
+    <meta name="twitter:image" content="/images/llama1.png">
+
+    <link rel="canonical" href="https://llama.coop">
+
+
+
+    <title>Join Us | Learning, Langugae And Multicultural Advancement</title>
+</head>
+
+<body>
+    <header>
+        <div class="headLogo">
+            <a href="index.html">
+                <h1>LLAMA Coop</h1>
+                <p>Learning Language And Multicultural Advancement</p>
+            </a>
+        </div>
+        <div>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="games.html">Games</a>
+                <a href="zine.html">Llamazine</a>
+            </nav>
+        </div>
+        <div class="headbtns">
+            <button class="joinbtn" onclick="window.location.href='membershipform.html'">Join Us</button>
+            <button data-theme-toggle><img src="/images/light_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                    id="themebtn"></button>
+            <button onclick="menuToggle()" class="hamMenu" id="menubtnbg"><img
+                    src="/images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="menubtn"></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section1">
+            <div>
+                <h2>Membership Form</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam, blanditiis
+                    voluptatum voluptates minima nostrum, nulla sequi ipsam iste modi tenetur quo! Quasi veritatis
+                    cupiditate a corrupti nostrum recusandae fugiat.</p>
+            </div>
+        </section>
+        <section class="section section3">
+            <form action="/submit-membership" method="post" id="membershipform">
+                <!-- Personal Information -->
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <!-- Contact Information -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+
+
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" name="zip" required>
+
+                <!-- Additional Information -->
+                <label for="interests">Interests/Skills</label>
+                <textarea id="interests" name="interests"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Join the Cooperative</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="newsletterform">
+            <h2>Subscribe to our Newletter</h2>
+            <form>
+                <input type="email" id="mail_input" placeholder="johndoe@llama.coop">
+                <input type="submit" id="submitbtn" value="+">
+            </form>
+            <div class="copyright">© Learning Language And Multicultural Advancement LLC 2024</div>
+        </div>
+        <div class="footerlinks">
+            <div class="Col">
+                <h3>About</h3>
+                <a href="#">Members</a>
+                <a href="#">Projects</a>
+                <a href="#">Motive</a>
+            </div>
+            <div class="Col">
+                <h3>Services</h3>
+                <a href="zine.html">LLAMAzine</a>
+                <a href="#">Mneme</a>
+                <a href="#">EMS</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="sideMenu">
+        <a href="membershipform.html">Join Us</a>
+        <a href="about.html">About</a>
+        <a href="games.html">Games</a>
+        <a href="zine.html">LLAMAzine</a>
+        <img src="/images/llama3.png" id="menullama">
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

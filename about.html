@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="games.css">
+    <title>About | Learning, Langugae And Multicultural Advancement</title>
+</head>
+
+<body>
+    <header>
+        <div class="headLogo">
+            <a href="index.html">
+                <h1>LLAMA Coop</h1>
+                <p>Learning Language And Multicultural Advancement</p>
+            </a>
+        </div>
+        <div>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="games.html">Games</a>
+                <a href="zine.html">Llamazine</a>
+            </nav>
+        </div>
+        <div class="headbtns">
+            <button class="joinbtn" onclick="window.location.href='membershipform.html'">Join Us</button>
+            <button data-theme-toggle><img src="/images/light_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                    id="themebtn"></button>
+            <button onclick="menuToggle()" class="hamMenu" id="menubtnbg"><img
+                    src="/images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="menubtn"></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section1">
+            <div>
+                <h2>About us</h2>
+                <h3>Motive</h3>
+                <p>We are US based cooperative that primarily revolves around technology and education. We are problem solvers and we try to solve problems that affect a major portion of the population. We try to promote Cultures and Languages from all around the globe.</p>
+            </div>
+        </section>
+        <section class="section section2">
+            <h2>Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <a href="#"><img src="/images/icons8-arcade-100.png"></a>
+                    <h3>Mneme</h3>
+                    <p>Education</p>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="/images/icons8-arcade-100.png"></a>
+                    <h3>EMS</h3>
+                    <p>Management</p>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="/images/icons8-arcade-100.png"></a>
+                    <h3>LLAMAzine</h3>
+                    <p>Media</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section2">
+            <h2>Members</h2>
+            <div class="cards">
+                <div class="card">
+                    <a href="#"><img src="/images/llama1.png"></a>
+                    <h3>Pragya P</h3>
+                    <p>President & CEO</p>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="/images/llama1.png"></a>
+                    <h3>Martin Danton</h3>
+                    <p>Secretary</p>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="/images/llama1.png"></a>
+                    <h3>Joeseph Roper</h3>
+                    <p>Treasurer</p>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="/images/llama1.png"></a>
+                    <h3>Alex</h3>
+                    <p>Member</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section section3">
+            <!--ADVERTS-->
+            <div class="ad"></div>
+            <p class="adpara">We don't have many sources of revenue so we run ads.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="newsletterform">
+            <h2>Subscribe to our Newletter</h2>
+            <form>
+                <input type="email" id="mail_input" placeholder="johndoe@llama.coop">
+                <input type="submit" id="submitbtn" value="+">
+            </form>
+            <div class="copyright">© Learning Language And Multicultural Advancement LLC 2024</div>
+        </div>
+        <div class="footerlinks">
+            <div class="Col">
+                <h3>About</h3>
+                <a href="#">Members</a>
+                <a href="#">Projects</a>
+                <a href="#">Motive</a>
+            </div>
+            <div class="Col">
+                <h3>Services</h3>
+                <a href="zine.html">LLAMAzine</a>
+                <a href="#">Mneme</a>
+                <a href="#">EMS</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="sideMenu">
+        <a href="membershipform.html">Join Us</a>
+        <a href="about.html">About</a>
+        <a href="games.html">Games</a>
+        <a href="zine.html">LLAMAzine</a>
+        <img src="/images/llama3.png" id="menullama">
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

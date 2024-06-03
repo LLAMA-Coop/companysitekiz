@@ -1,0 +1,103 @@
+section {
+    margin: 50px auto;
+}
+
+section h2,
+section p {
+    text-align: center;
+}
+
+section h3 {
+    font-family: Bebas_Neue;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px auto 5px auto;
+    color: var(--tc);
+}
+
+.section2 {
+    margin: 0px;
+    flex-direction: column;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ad {
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    background-color: var(--tc);
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: var(--tc);
+    border-radius: 20px;
+    margin: 15px auto;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin: auto;
+}
+
+.card h3 {
+    font-family: Bebas_Neue;
+    font-size: 30px;
+}
+
+.card p {
+    font-family: Roboto;
+}
+
+#membershipform {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+#membershipform label,
+#membershipform input, #membershipform button {
+    color: var(--tc);
+    font-family: Bebas_Neue;
+    font-size: 25px;
+}
+
+#membershipform input, #membershipform textarea, #membershipform button {
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: var(--tc);
+    color: var(--btc);
+    padding: 2px 15px;
+    margin-bottom: 15px;
+}
+
+/*PHONES*/
+@media only screen and (max-width:760px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 20px 0px;
+    }
+}

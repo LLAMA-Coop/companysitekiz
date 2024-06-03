@@ -1,0 +1,616 @@
+@font-face {
+    font-family: 'Jacquard';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/fonts/Jacquard_12/Jacquard12-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Danfo';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/fonts/Danfo/Danfo-Regular-VariableFont_ELSH.ttf');
+}
+
+@font-face {
+    font-family: 'Bebas_Neue';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/fonts/Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'PirateOne';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/fonts/Pirata_One/PirataOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ceasar_Dressing';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/fonts/Caesar_Dressing/CaesarDressing-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Sofia Sans;
+    transition: 0.5s ease-in-out;
+}
+
+:root {
+    --bg: #E9D6B8;
+    --g1: linear-gradient(#ddc595, #8b7449);
+    --tc: black;
+    --lc: ;
+    --btc: #E9D6B8;
+    --invert: invert(100%);
+    --invertoff: invert(0%);
+    /*Link-Colour*/
+}
+
+[data-theme="light"] {
+    --bg: #E9D6B8;
+    --g1: linear-gradient(#ddc595, #8b7449);
+    --tc: black;
+    --lc: ;
+    --btc: #E9D6B8;
+    --invert: invert(100%);
+    --invertoff: invert(0%);
+    /*Link-Colour*/
+}
+
+[data-theme="dark"] {
+    --bg: #E9D6B8;
+    --g1: linear-gradient(black, #4a3d28);
+    --tc: white;
+    --lc: ;
+    --btc: black;
+    --invert: invert(0%);
+    --invertoff: invert(100%);
+    /*Link-Colour*/
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: var(--g1);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*Removing the scrollbar*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*Header*/
+header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    min-width: 950px;
+}
+
+.headLogo h1 {
+    font-weight: 500;
+    font-size: 50px;
+    color: var(--tc);
+    padding: 0px 10px;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: Ceasar_Dressing;
+}
+
+.headLogo p {
+    color: var(--tc);
+    padding: 0px 10px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Bebas_Neue;
+}
+
+nav {
+    width: max-content;
+    min-width: 400px;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--tc);
+    margin: auto;
+    font-weight: 550;
+    font-size: 30px;
+    font-family: Bebas_Neue;
+}
+
+.hamMenu {
+    display: none;
+    z-index: 1;
+}
+
+.headbtns {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.headbtns button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--tc);
+    color: var(--btc);
+    font-size: 20px;
+    font-family: Bebas_Neue;
+    margin: 0px 5px;
+    height: 50px;
+}
+
+/*BODY*/
+main {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 900px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.section h2 {
+    font-size: 60px;
+    font-family: PirateOne;
+    color: var(--tc);
+}
+
+.section p {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 600;
+    color: var(--tc);
+}
+
+/*SECTION 1*/
+.section1_content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.section1_text {
+    margin: 0px 0px 30px 0px;
+}
+
+.section1 img {
+    margin: auto;
+    width: 20%;
+    min-width: 280px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+#introLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#introLinks div {
+    display: flex;
+}
+
+#introLinks a {
+    text-decoration: none;
+    color: var(--btc);
+    background-color: var(--tc);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productsbtns a {
+    color: var(--btc);
+    font-size: 20px;
+    font-family: Bebas_Neue;
+    padding: 10px;
+    margin: 0px 15px;
+}
+
+.mediabtns a {
+    padding: 5px;
+    margin: 0px 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.mediabtns a svg {
+    filter: var(--invert);
+}
+
+
+
+/*SECTION 3*/
+.section-para {
+    margin: auto;
+    width: 45%;
+    min-height: 200px;
+    height: max-content;
+    background-color: var(--tc);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section-para ul li {
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.section-para ul,
+.section-para h2 {
+    color: var(--btc);
+}
+
+.section-links {
+    width: 50%;
+    margin: auto;
+    min-width: 450px;
+    height: max-content;
+}
+
+.venture-links,
+.social-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+
+.venture-links section,
+.social-links section {
+    border-radius: 8px;
+    background-color: var(--tc);
+    margin: 5px auto;
+}
+
+.venture-links section a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.linkimg {
+    width: 60%;
+    margin: auto;
+}
+
+.social-links section svg,
+.venture-links section img {
+    filter: var(--invert);
+}
+
+.venture-links section {
+    height: 200px;
+    width: 45%;
+}
+
+.social-links section a {
+    width: 80px;
+    height: 80px;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    min-width: 850px;
+}
+
+.newsletterform h2 {
+    font-family: Bebas_Neue;
+    font-size: 35px;
+    color: var(--tc);
+}
+
+#mail_input {
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--tc);
+    color: var(--btc);
+    padding: 1px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Roboto;
+}
+
+#submitbtn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--tc);
+    color: var(--btc);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.footerlinks {
+    display: flex;
+    min-width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerlinks h3 {
+    font-family: Bebas_Neue;
+    font-size: 30px;
+    color: var(--tc);
+}
+
+.footerlinks a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--tc);
+    font-family: Roboto;
+}
+
+.Col {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: Bebas_Neue;
+    color: var(--tc);
+}
+
+/*SIDE MENU*/
+#sideMenu {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--btc);
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0%;
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+
+#sideMenu a {
+    text-decoration: none;
+    color: var(--tc);
+    font-family: Bebas_Neue;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#menullama {
+    width: 250px;
+}
+
+/*TABLET VIEW*/
+@media only screen and (max-width:1020px) {
+    header {
+        min-width: 750px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamMenu {
+        display: inline;
+    }
+
+    .hamMenu img {
+        filter: var(--invertoff);
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+        min-width: 650px;
+    }
+
+    .section1 img {
+        min-width: 200px;
+    }
+
+    .section h2 {
+        font-size: 50px;
+    }
+
+    .section p {
+        font-size: 18px;
+    }
+
+    .section2 {
+        width: 95%;
+    }
+
+    .section-links {
+        min-width: 350px;
+    }
+
+    .venture-links section {
+        height: 190px;
+    }
+
+    .social-links section {
+        width: 60px;
+        height: 60px;
+    }
+
+    footer {
+        min-width: 700px;
+    }
+
+    #sideMenu {
+        display: flex;
+        z-index: -1;
+    }
+}
+
+/*PHONES*/
+@media only screen and (max-width:760px) {
+
+
+    header {
+        width: 95%;
+        min-width: 200px;
+    }
+
+    .headLogo h1 {
+        font-weight: 500;
+        font-size: 35px;
+    }
+
+    .headLogo p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .headbtns button {
+        padding: 8px;
+        font-size: 18px;
+        font-family: Bebas_Neue;
+    }
+
+    .joinbtn {
+        display: none;
+    }
+
+    main {
+        width: 90%;
+        min-width: 200px;
+    }
+
+    .section h2 {
+        font-size: 45px;
+    }
+
+    .section p {
+        font-size: 18px;
+    }
+
+    .section1_content {
+        width: 95%;
+    }
+
+    .section1 {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    .section1 img {
+        min-width: 200px;
+        width: 100%;
+    }
+
+    #introLinks {
+        flex-direction: column;
+    }
+
+    .productsbtns a,
+    .mediabtns a {
+        margin: 10px 5px;
+    }
+
+    .section2 {
+        width: 90%;
+    }
+
+    .section3 {
+        flex-direction: column;
+    }
+
+    .section-para {
+        width: 90%;
+    }
+
+    .section-para h2 {
+        font-size: 40px;
+    }
+
+    .section-links {
+        min-width: 250px;
+        width: 100%;
+    }
+
+    .venture-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .venture-links section {
+        width: 48%;
+        margin: 5px 0px;
+        height: 150px;
+    }
+
+    .social-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .social-links section {
+        margin: 5px 0px;
+    }
+
+    footer {
+        width: 90%;
+        min-width: 200px;
+        flex-direction: column;
+    }
+
+    .newsletterform {
+        margin: 10px 0px;
+    }
+}
