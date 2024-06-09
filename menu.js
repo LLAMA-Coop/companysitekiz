@@ -19,8 +19,7 @@ function menuToggle() {
             localStorage.setItem("Menutoggle", "ON");
     menu.style.opacity = "100%";
     menubtn.src = "/images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg";
-    menubtnbg.style.backgroundColor = "var(--btc)";
-    menubtn.style.filter = "invert(100%)";
+    menubtnbg.style.backgroundColor = "var(--tc)";
     menu.style.zIndex = "0";
         }
     else{
