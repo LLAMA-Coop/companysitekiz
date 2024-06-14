@@ -334,7 +334,6 @@ main {
 }
 
 .linkimg {
-  width: 60%;
   margin: auto;
 }
 
@@ -344,7 +343,7 @@ main {
 }
 
 .venture-links section {
-  height: 175px;
+  height: 150px;
   width: 45%;
 }
 
@@ -516,10 +515,6 @@ footer {
     min-width: 350px;
   }
 
-  .venture-links section {
-    height: 190px;
-  }
-
   footer {
     min-width: 700px;
   }
@@ -613,17 +608,6 @@ footer {
   .section-links {
     min-width: 250px;
     width: 100%;
-  }
-
-  .venture-links {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .venture-links section {
-    width: 48%;
-    margin: 5px 0px;
-    height: 150px;
   }
 
   .social-links {
